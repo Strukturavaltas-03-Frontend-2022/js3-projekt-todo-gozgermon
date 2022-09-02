@@ -1,0 +1,102 @@
+.base{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(34, 208, 247);
+    width: 600px;
+    padding: 30px;
+}
+
+.main_panel{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    background-color: aliceblue;
+    width: 540px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.control_panel--add{
+    display: flex;
+    flex-direction: row;
+}
+
+.control_panel--add input{
+    font-size: 33px;
+    line-height: 40px;
+    width: 400px;
+}
+.control_panel--add button{
+    height: 46px;
+    width: 46px;
+    font-size: 40px;
+}
+
+.nothing_state{
+    display: none;
+}
+
+.pending_list{
+    transform-origin: top;
+}
+
+.todo_item{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 25px;
+    background-color: rgb(182, 198, 229);
+    padding: 5px;
+    border-radius: 5px;
+    margin: 5px;
+
+}
+
+.todo_item--front input{
+    width:24px;
+    height: 24px;
+}
+
+.todo_item i{
+    opacity: 0%;
+    transition: opacity 1s;
+}
+
+.todo_item:hover i{
+    opacity: 100%;
+}
+
+
+.done_item{
+    font-size: 25px;
+    background-color: rgb(182, 198, 229);
+    padding: 5px;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+.done_item label{
+    text-decoration: line-through;
+}
+
+
+.show_clear{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.show_clear button{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.completed_list{
+    display: none;
+}
+
+.completed_list--caption{
+    display: none;
+}

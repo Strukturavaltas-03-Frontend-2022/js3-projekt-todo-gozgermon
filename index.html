@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/font-awesome-4.7.0/css/font-awesome.css">
+    <script src="https://kit.fontawesome.com/dae1120c5c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="base">
+        <h1>Daily To-Do list manager </h1>
+        <div class="main_panel">
+            <div class="control_panel">
+                <h1 class="control_panel--date">2022.12.12.</h1>
+                <div class="control_panel--add">
+                    <input type="text" placeholder="Take the garbage out">
+                    <button>+</button>
+                </div>
+            </div>
+            <h2 class="nothing_state">Nothing to be done</h2>
+            <div class="task_panel">
+                <h2>You have xx pending items</h2>
+                <div class="pending_list">
+                    <div class="todo_item">
+                        <div class="todo_item--front">
+                            <input type="checkbox" id="todo_item_1">
+                            <label for="todo_item_1">kuka</label>
+                        </div>
+                        <i class="fa-solid fa-trash-can"></i>
+                    </div>
+                </div>
+                <h2 class="completed_list--caption">Completed tasks:</h2>
+                <div class="completed_list">
+                    <div class="done_item">
+                        <input type="checkbox" id="done_item_1">
+                        <label for="done_item_1">kuka</label>
+                    </div>
+                </div>
+                <div class="show_clear">
+                    <button>Show Complete</button>
+                    <button>Clear all</button>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
